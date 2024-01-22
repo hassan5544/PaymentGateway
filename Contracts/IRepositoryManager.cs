@@ -1,7 +1,7 @@
 namespace Contracts;
 
-public class IRepositoryManager
+public interface IRepositoryManager
 {
-    public IPaymentRepository _paymentRepository;
-    public IPaymentItemsRepository _PaymentItemsRepository;
+    public IPaymentRepositoryBase PaymentRepositoryBase { get; }
+    public IPaymentItemsRepositoryBase PaymentItemsRepositoryBase { get; }
 }
